@@ -5,7 +5,7 @@
  * main -main function entry
  *
  *
- * Return: (1)
+ * Return: (1);
  */
 int main(void)
 {
