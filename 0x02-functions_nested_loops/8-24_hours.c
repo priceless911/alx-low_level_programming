@@ -1,41 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 /**
-* jack_bauer - function to print every minute of the day
+* main - main funtion entry
 *
-* Return: int
+* print all base 16 digit in lowercase
+* Return: int(0)
 */
-void jack_bauer(void)
+int main(void)
 {
-	int i, j, k, l;
+	char letter;
+	int number;
 
-	for (i = 0; i < 3; i++)
+	for (number = 0; number <= 9; number++)
 	{
-		if (i == 2)
-		{
-			for (j = 0; j < 4; j++)
-			{
-				for (k = 0; k < 6; k++)
-				{
-					for (l = 0; l < 10; l++)
-					{
-						printf("%d%d:%d%d\n", i, j, k, l);
-					}
-				}
-			}
-		}
-		else
-		{
-			for (j = 0; j < 9; j++)
-			for (j = 0; j < 10; j++)
-			{
-				for (k = 0; k < 6; k++)
-				{
-					for (l = 0; l < 10; l++)
-					{
-						printf("%d%d:%d%d\n", i, j, k, l);
-					}
-				}
-			}
-		}
+		putchar((char) (number + 48));
 	}
+	for (letter = 'a'; letter <= 'f'; letter++)
+	{
+		putchar(letter);
+	}
+	putchar('\n');
+	return (0);
 }
