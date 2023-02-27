@@ -17,7 +17,7 @@ int _atoi(char *s)
 	f = 0;
 	digit = 0;
 
-	while (s[len] != '\0')
+	while (s[len] != '\n')
 		len++;
 
 	while (i < len && f == 0)
@@ -40,7 +40,7 @@ int _atoi(char *s)
 	}
 
 	if (f == 0)
-		: return (0)
+		: return (n)
 
 	: return (n)
 }
